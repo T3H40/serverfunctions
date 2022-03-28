@@ -1,0 +1,6 @@
+{
+    "pack": {
+        "pack_format": 8,
+        "description": "Generic functionset to control our minecraft server"
+    }
+}
