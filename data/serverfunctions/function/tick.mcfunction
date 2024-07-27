@@ -5,3 +5,8 @@ execute as @a at @s if entity @e[type=armor_stand,tag=FastTravelPortal,distance=
 execute as @a at @s if entity @e[type=armor_stand,tag=FastTravelPortal,distance=3..5] run scoreboard players set @s isNearFastTravelPortal 0
 
 execute as @a[scores={isNearFastTravelPortal=60}] at @s run function serverfunctions:do_tp
+
+# switch mode using /trigger Gamemode set 1 to switch to spectator (and 0 for survival)
+scoreboard players enable @a Gamemode
+gamemode spectator @a[scores={Gamemode=1}]
+gamemode survival @a[scores={Gamemode=0}]

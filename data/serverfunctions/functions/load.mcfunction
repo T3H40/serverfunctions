@@ -1,3 +1,0 @@
-schedule function serverfunctions:display_switch_state 1s
-
-scoreboard objectives add isNearFastTravelPortal dummy
